@@ -1,0 +1,80 @@
+@mixin blockbtn {
+  display: flex;
+  flex-direction: column;
+  a,
+  input[type='submit'] {
+    background-color: $color-black;
+    margin: 10px;
+    align-self: center;
+    width: 100%;
+    text-align: center;
+    color: $color-white;
+    text-decoration: none;
+    padding: 5px 0 5px;
+  }
+}
+
+@mixin styletitle {
+  font-family: mt-light;
+  display: block;
+  font-size: $font-title;
+  color: $color-black;
+  font-weight: 200;
+}
+
+@mixin book_extract($margin-top) {
+  font-family: mt-light;
+  display: block;
+  font-size: $font-small-text;
+  font-weight: 100;
+  color: $color-light-black;
+  margin-top: $margin-top;
+  text-transform: lowercase;
+}
+
+@mixin book_highlight {
+  font-size: $font-highlights;
+  font-family: mt-bold;
+  font-weight: 300;
+  display: block;
+  color: $color-light-black;
+  text-transform: lowercase;
+}
+@mixin section-head-styling {
+  h3 {
+    font-family: mt-bold;
+    font-size: $font-header-title;
+  }
+}
+
+@mixin arrow-down($color, $size) {
+  .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    align-self: center;
+    margin-left: 2px;
+    border-top: $size solid $color;
+  }
+}
+
+@mixin search_title {
+  font-family: mt-light;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+@mixin pagination {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  font-family: mt-light;
+  font-weight: 200;
+  a {
+    color: $color-light-black;
+    font-size: 0.8em;
+  }
+}

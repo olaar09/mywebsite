@@ -1,0 +1,21 @@
+$color-black: rgb(43, 43, 43);
+$color-lighter-black: #666666;
+$color-light-black: #474747;
+$color-white: #fff;
+$color-bg: $color-white;
+$color-gray: #ddd;
+$color-light-purple: #5b5bd2;
+$color-okb-yellow: #fde62c;
+
+@font-face {
+  font-family: 'baloo';
+  src: url(/styles/font/Baloo-Regular.ttf) format('truetype');
+}
+
+$border-top: 1px solid $color-gray;
+
+$font-small-text: 0.95em;
+$font-highlights: 0.7em;
+$font-title: 1.4em;
+$font-header-title: 1.5em;
+$container-padding: 5px 15px 5px 10px;
